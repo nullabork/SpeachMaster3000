@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace speechmaster
 {
-    public partial class GoogleSettings : UserControl
+    public partial class GoogleSettingsControl : UserControl
     {
-        public GoogleSettings()
+        public GoogleSettingsControl()
         {
             InitializeComponent();
 

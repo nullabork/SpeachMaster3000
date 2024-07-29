@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace speechmaster
 {
-    public partial class Settings : Form
+    public partial class SettingsForm : Form
     {
-        public Settings()
+        public SettingsForm(UserControl userControl)
         {
             InitializeComponent();
+            EmbedUserControl(userControl);
+        }
+
+        private void EmbedUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            this.Controls.Add(userControl);
         }
     }
 }

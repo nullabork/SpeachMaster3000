@@ -51,7 +51,8 @@
             // splitContainer1
             // 
             splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 24);
+            splitContainer1.Location = new Point(0, 35);
+            splitContainer1.Margin = new Padding(4, 5, 4, 5);
             splitContainer1.Name = "splitContainer1";
             splitContainer1.Orientation = Orientation.Horizontal;
             // 
@@ -62,24 +63,26 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(splitContainer2);
-            splitContainer1.Size = new Size(800, 404);
-            splitContainer1.SplitterDistance = 238;
+            splitContainer1.Size = new Size(1143, 693);
+            splitContainer1.SplitterDistance = 408;
+            splitContainer1.SplitterWidth = 7;
             splitContainer1.TabIndex = 0;
             // 
             // textBox2
             // 
             textBox2.Dock = DockStyle.Fill;
             textBox2.Location = new Point(0, 0);
+            textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(800, 238);
+            textBox2.Size = new Size(1143, 408);
             textBox2.TabIndex = 0;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // splitContainer2
             // 
             splitContainer2.Dock = DockStyle.Fill;
             splitContainer2.Location = new Point(0, 0);
+            splitContainer2.Margin = new Padding(4, 5, 4, 5);
             splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -89,25 +92,28 @@
             // splitContainer2.Panel2
             // 
             splitContainer2.Panel2.Controls.Add(speakButton);
-            splitContainer2.Size = new Size(800, 162);
-            splitContainer2.SplitterDistance = 608;
+            splitContainer2.Size = new Size(1143, 278);
+            splitContainer2.SplitterDistance = 868;
+            splitContainer2.SplitterWidth = 6;
             splitContainer2.TabIndex = 0;
             // 
             // speakInput
             // 
             speakInput.Dock = DockStyle.Fill;
             speakInput.Location = new Point(0, 0);
+            speakInput.Margin = new Padding(4, 5, 4, 5);
             speakInput.Multiline = true;
             speakInput.Name = "speakInput";
-            speakInput.Size = new Size(608, 162);
+            speakInput.Size = new Size(868, 278);
             speakInput.TabIndex = 0;
             // 
             // speakButton
             // 
             speakButton.Dock = DockStyle.Fill;
             speakButton.Location = new Point(0, 0);
+            speakButton.Margin = new Padding(4, 5, 4, 5);
             speakButton.Name = "speakButton";
-            speakButton.Size = new Size(188, 162);
+            speakButton.Size = new Size(269, 278);
             speakButton.TabIndex = 0;
             speakButton.Text = "button1";
             speakButton.UseVisualStyleBackColor = true;
@@ -115,10 +121,12 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { settingsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Padding = new Padding(9, 3, 0, 3);
+            menuStrip1.Size = new Size(1143, 35);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -126,34 +134,37 @@
             // 
             settingsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { googleAPIToolStripMenuItem });
             settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            settingsToolStripMenuItem.Size = new Size(61, 20);
+            settingsToolStripMenuItem.Size = new Size(92, 29);
             settingsToolStripMenuItem.Text = "Settings";
             settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
             // 
             // googleAPIToolStripMenuItem
             // 
             googleAPIToolStripMenuItem.Name = "googleAPIToolStripMenuItem";
-            googleAPIToolStripMenuItem.Size = new Size(180, 22);
-            googleAPIToolStripMenuItem.Text = "Google API";
+            googleAPIToolStripMenuItem.Size = new Size(270, 34);
+            googleAPIToolStripMenuItem.Text = "Google";
             googleAPIToolStripMenuItem.Click += googleAPIToolStripMenuItem_Click;
             // 
             // statusStrip1
             // 
-            statusStrip1.Location = new Point(0, 428);
+            statusStrip1.ImageScalingSize = new Size(24, 24);
+            statusStrip1.Location = new Point(0, 728);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(800, 22);
+            statusStrip1.Padding = new Padding(1, 0, 20, 0);
+            statusStrip1.Size = new Size(1143, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(splitContainer1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             splitContainer1.Panel1.ResumeLayout(false);

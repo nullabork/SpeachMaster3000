@@ -1,7 +1,7 @@
 ﻿
 namespace speechmaster
 {
-    partial class GoogleSettings
+    partial class GoogleSettingsControl
     {
         /// <summary> 
         /// Required designer variable.
