@@ -43,7 +43,7 @@ namespace talbot3
 
             waveOut.Init(mp3Reader);
             waveOut.Play();
-                        
+
             while (waveOut.PlaybackState == PlaybackState.Playing)
             {
                 await Task.Delay(1000);
@@ -63,6 +63,15 @@ namespace talbot3
             throw new Exception("VB-Audio Virtual Cable not found.");
         }
 
+        private void googleAPIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            textBox2 = new TextBox();
             splitContainer2 = new SplitContainer();
             speakInput = new TextBox();
-            textBox2 = new TextBox();
+            speakButton = new Button();
             menuStrip1 = new MenuStrip();
             settingsToolStripMenuItem = new ToolStripMenuItem();
+            googleAPIToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
-            speakButton = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -65,6 +66,16 @@
             splitContainer1.SplitterDistance = 238;
             splitContainer1.TabIndex = 0;
             // 
+            // textBox2
+            // 
+            textBox2.Dock = DockStyle.Fill;
+            textBox2.Location = new Point(0, 0);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(800, 238);
+            textBox2.TabIndex = 0;
+            textBox2.TextChanged += textBox2_TextChanged;
+            // 
             // splitContainer2
             // 
             splitContainer2.Dock = DockStyle.Fill;
@@ -91,14 +102,16 @@
             speakInput.Size = new Size(608, 162);
             speakInput.TabIndex = 0;
             // 
-            // textBox2
+            // speakButton
             // 
-            textBox2.Dock = DockStyle.Fill;
-            textBox2.Location = new Point(0, 0);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(800, 238);
-            textBox2.TabIndex = 0;
+            speakButton.Dock = DockStyle.Fill;
+            speakButton.Location = new Point(0, 0);
+            speakButton.Name = "speakButton";
+            speakButton.Size = new Size(188, 162);
+            speakButton.TabIndex = 0;
+            speakButton.Text = "button1";
+            speakButton.UseVisualStyleBackColor = true;
+            speakButton.Click += speakButton_Click;
             // 
             // menuStrip1
             // 
@@ -111,9 +124,18 @@
             // 
             // settingsToolStripMenuItem
             // 
+            settingsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { googleAPIToolStripMenuItem });
             settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             settingsToolStripMenuItem.Size = new Size(61, 20);
             settingsToolStripMenuItem.Text = "Settings";
+            settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
+            // 
+            // googleAPIToolStripMenuItem
+            // 
+            googleAPIToolStripMenuItem.Name = "googleAPIToolStripMenuItem";
+            googleAPIToolStripMenuItem.Size = new Size(180, 22);
+            googleAPIToolStripMenuItem.Text = "Google API";
+            googleAPIToolStripMenuItem.Click += googleAPIToolStripMenuItem_Click;
             // 
             // statusStrip1
             // 
@@ -122,17 +144,6 @@
             statusStrip1.Size = new Size(800, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
-            // 
-            // speakButton
-            // 
-            speakButton.Dock = DockStyle.Fill;
-            speakButton.Location = new Point(0, 0);
-            speakButton.Name = "speakButton";
-            speakButton.Size = new Size(188, 162);
-            speakButton.TabIndex = 0;
-            speakButton.Text = "button1";
-            speakButton.UseVisualStyleBackColor = true;
-            speakButton.Click += speakButton_Click;
             // 
             // Form1
             // 
@@ -171,5 +182,6 @@
         private ToolStripMenuItem settingsToolStripMenuItem;
         private StatusStrip statusStrip1;
         private Button speakButton;
+        private ToolStripMenuItem googleAPIToolStripMenuItem;
     }
 }

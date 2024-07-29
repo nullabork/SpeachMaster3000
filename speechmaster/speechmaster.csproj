@@ -22,7 +22,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="config\ElevenAuth.json.sample">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="config\ElevenAuth.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\GoogleAuth.json.sample">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="config\GoogleAuth.json">
