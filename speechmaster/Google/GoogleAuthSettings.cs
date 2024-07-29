@@ -8,32 +8,32 @@ public class GoogleAuthSettings : JsonSerializable<GoogleAuthSettings>
     public static new GoogleAuthSettings GetInstance() => Instance;
 
     [JsonProperty("type")]
-    public string? Type { get; set; }
+    public string? type { get; set; }
 
     [JsonProperty("project_id")]
-    public string? ProjectId { get; set; }
+    public string? projectId { get; set; }
 
     [JsonProperty("private_key_id")]
-    public string? PrivateKeyId { get; set; }
+    public string? privateKeyId { get; set; }
 
     [JsonProperty("private_key")]
-    public string? PrivateKey { get; set; }
+    public string? privateKey { get; set; }
 
     [JsonProperty("client_email")]
-    public string? ClientEmail { get; set; }
+    public string? clientEmail { get; set; }
 
     [JsonProperty("client_id")]
-    public string? ClientId { get; set; }
+    public string? clientId { get; set; }
 
     [JsonProperty("auth_uri")]
-    public string AuthUri { get; set; } = "https://accounts.google.com/o/oauth2/auth";
+    public string authUri { get; set; } = "https://accounts.google.com/o/oauth2/auth";
 
     [JsonProperty("token_uri")]
-    public string TokenUri { get; set; } = "https://oauth2.googleapis.com/token";
+    public string tokenUri { get; set; } = "https://oauth2.googleapis.com/token";
 
     [JsonProperty("auth_provider_x509_cert_url")]
-    public string AuthProviderX509CertUrl { get; set; } = "https://www.googleapis.com/oauth2/v1/certs";
+    public string authProviderX509CertUrl { get; set; } = "https://www.googleapis.com/oauth2/v1/certs";
 
     [JsonProperty("client_x509_cert_url")]
-    public string ClientX509CertUrl { get; set; } = "https://www.googleapis.com/robot/v1/metadata/x509/server%40talk-bork.iam.gserviceaccount.com";
+    public string clientX509CertUrl { get; set; } = "https://www.googleapis.com/robot/v1/metadata/x509/server%40talk-bork.iam.gserviceaccount.com";
 }
