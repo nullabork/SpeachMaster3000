@@ -1,3 +1,5 @@
+global using System;
+
 namespace talbot3
 {
     internal static class Program

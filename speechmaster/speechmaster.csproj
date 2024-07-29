@@ -10,10 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.Polly" Version="3.7.400" />
     <PackageReference Include="Google.Apis" Version="1.68.0" />
     <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
     <PackageReference Include="Google.Apis.Core" Version="1.68.0" />
     <PackageReference Include="Google.Cloud.TextToSpeech.V1" Version="3.6.0" />
+    <PackageReference Include="IBM.Watson.TextToSpeech.v1" Version="7.0.0" />
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.38.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
     <PackageReference Include="NAudio" Version="2.2.1" />
   </ItemGroup>

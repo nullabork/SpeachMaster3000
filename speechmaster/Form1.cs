@@ -7,27 +7,9 @@ namespace talbot3
 {
     public partial class Form1 : Form
     {
-
-        static readonly HttpClient client = new HttpClient();
-
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitContainer2_SplitterMoved(object sender, SplitterEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private async void speakButton_Click(object sender, EventArgs e)
@@ -46,7 +28,7 @@ namespace talbot3
             stopwatch.Start();
 
             var ttsProvider = new ElevenLabsTTSProvider();
-            using var stream = await ttsProvider.GetSpeechFromTextAsync(text);
+            using var stream = await ttsProvider.GetSpeechFromTextAsync(text, default);
 
             //var voices = await ttsProvider.GetVoicesAsync();
             //foreach (var voice in voices)

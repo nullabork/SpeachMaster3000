@@ -81,7 +81,6 @@
             splitContainer2.Size = new Size(800, 162);
             splitContainer2.SplitterDistance = 608;
             splitContainer2.TabIndex = 0;
-            splitContainer2.SplitterMoved += splitContainer2_SplitterMoved;
             // 
             // speakInput
             // 
@@ -100,7 +99,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(800, 238);
             textBox2.TabIndex = 0;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // menuStrip1
             // 
@@ -147,7 +145,6 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);

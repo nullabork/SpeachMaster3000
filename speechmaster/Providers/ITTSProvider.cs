@@ -1,11 +1,9 @@
-﻿using speechmaster.Voices;
-
-namespace speechmaster.Providers
+﻿namespace speechmaster.Providers
 {
     public interface ITTSProvider
     {
-        Task<Stream> GetSpeechFromTextAsync(string text);
-        Task<IEnumerable<IVoice>> GetVoicesAsync();
+        Task<Stream> GetSpeechFromTextAsync(string text, CancellationToken token);
+        Task<IEnumerable<IVoice>> GetVoicesAsync(CancellationToken token);
     }
 
 }
