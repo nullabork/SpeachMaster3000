@@ -1,4 +1,5 @@
 using NAudio.Wave;
+using speechmaster;
 using speechmaster.Providers;
 using System.Diagnostics;
 using System.Reflection.Metadata.Ecma335;
@@ -65,7 +66,9 @@ namespace talbot3
 
         private void googleAPIToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            //create new settings SettingsForm with GoogleSettingsControl user control embedded
+            var settingsForm = new SettingsForm(new GoogleSettingsControl());
+            settingsForm.ShowDialog();
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
