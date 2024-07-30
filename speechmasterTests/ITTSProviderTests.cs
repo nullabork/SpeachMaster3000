@@ -14,7 +14,7 @@ namespace speechmasterTests
     {
       foreach (var provider in GetTTSProviders())
       {
-        System.Diagnostics.Debug.WriteLine("Testing: " + provider.GetType().Name);
+        System.Diagnostics.Debug.WriteLine("Testing GetSpeechFromTextAsync: " + provider.GetType().Name);
         using var stream = await provider.GetSpeechFromTextAsync(text, CancellationToken.None);
         Assert.IsNotNull(stream, "Stream is null for " + provider.GetType().Name);
         Assert.IsTrue(stream.Length > 0, "Stream is empty for " + provider.GetType().Name);
@@ -27,7 +27,7 @@ namespace speechmasterTests
     {
       foreach (var provider in GetTTSProviders())
       {
-        System.Diagnostics.Debug.WriteLine("Testing: " + provider.GetType().Name);
+        System.Diagnostics.Debug.WriteLine("Testing GetVoicesAsync: " + provider.GetType().Name);
         var voices = await provider.GetVoicesAsync(CancellationToken.None);
         Assert.IsNotNull(voices, "Voice list is null for " + provider.GetType().Name);
         Assert.IsTrue(voices.Count() > 0, "Voice list is empty for " + provider.GetType().Name);
